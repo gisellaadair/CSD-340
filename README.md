@@ -1,6 +1,6 @@
-# CSD-340
+# CSD 340 Web Development with HTML and CSS
 Web Development With HTML Course
 
-## contributors 
+## Contributors 
 - Instructor: Christine Mazhata
 - Student: Elvia Gisella Adair
