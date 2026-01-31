@@ -13,7 +13,7 @@
         vertical-align: top;
     }
 
-    .bottom-div{
+    #bottom-div{
         width: 100%;
         margin-top: 60%;
         float: right;
@@ -47,7 +47,7 @@
 
     a {
         text-decoration: none;
-        color: black;
+        color: rgb(50, 11, 112);
     }
 
      a:hover {

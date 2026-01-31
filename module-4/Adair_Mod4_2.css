@@ -1,0 +1,66 @@
+/* Author: Gisella Adair
+   Assignment: Module 4.2 - Build a Web Page Exercise - Part 4
+   Date: January 31, 2026
+*/
+
+h1 {
+    text-align: center;
+    color: rgba(7, 7, 7, 0.76);
+}
+
+h3 {
+    text-align: center;
+    color: rgba(2, 2, 41, 0.9);
+}   
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(9, 68, 46, 0.7);
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5%;
+    gap: 10px;
+    border: 1px solid #24155a;
+    padding: 20px;
+}
+
+#image-gallery > div {
+    border: 1px solid #24155a;
+    padding: 10px;
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+    margin: 10px 0;
+}
+
+img {
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
