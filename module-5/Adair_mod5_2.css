@@ -1,0 +1,64 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fffaf3;
+  color: #333;
+}
+
+header {
+  background-color: #2d8f59;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.him {
+  text-align: center;
+  padding: 2rem;
+}
+
+.him img {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+footer {
+  background-color: #2d8f59;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.about-content {
+    text-align: center;
+  padding: 2rem;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .about img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
