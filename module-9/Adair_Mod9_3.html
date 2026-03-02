@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+    Title: LastName_Mod9_3.html
+    Author: Gisella Adair
+    Date: March 1st, 2026
+    Description: Assignment 9.3 - JavaScript Part 1
+  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gisella Adair">
+    <meta name="Description" content="Module 2.2-Assignment: Building a Web Page Exercise, Part 2 ">
+    <link rel="stylesheet" href="Adair_Mod9_3.css">
+    <title>CSD 340 Development with HTML and CSS</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <p>
+            <strong>More mind wandering equals more Creativity:</strong>
+            Researchers at the University of California, Santa Barbara (Christoff,2009)
+            have evidence that people whose minds wander a lot are more <span id="word1">_____</span> and better problem solvers.
+            Their brains have them working on the task at hand but simultaneously processing other information and making connections. 
+            Retrieved from 100 Things every designer needs to know about people by Susan M Weinschenk. Page 75
+        </p>
+        <p>
+            <strong>Men and Women may react differently to stress:</strong>
+            Lindsay St. Claire (2010) and her team found that if men drank caffeinated <span id="word2">_____</span> while completing a stressful task,
+            it impaired their performance. Women, on the other hand, completed the task faster if they had been drinking caffeinated coffee. 
+            Retrieved from 100 Things every designer needs to know about people by Susan M Weinschenk. Page 194
+        </p>
+        <p>
+            <strong>Trust is the biggest predictor of <span id="word3">_____</span></strong><br>
+            Extroverts are happier than introverts
+            Optimists are happier than pessimists <br>
+            Married people are happier than singles, but people with children are the same as childless couples <br>
+            Republicans are happier than Democrats <br>
+            People who go to church are happier than those who don’t <br>
+            People with <span id="word4">_____</span> degrees are happier than those without, but people with advanced degrees are less happy. <br>
+            Retrieved from 100 Things every designer needs to know about people by Susan M Weinschenk. Page 179
+        </p>
+        <button onclick="fillWord1()">Creative</button>
+        <button onclick="fillWord2()">Coffee</button>
+        <button onclick="fillWord3()">Happiness</button>
+        <button onclick="fillWord4()">College</button>
+
+        <script>
+            let word1 = "creative";
+            let word2 = "coffee"
+            let word3 = "happiness"
+            let word4 = "college"
+
+            function fillWord1() {
+                document.getElementById("word1").textContent = word1;
+            }
+            function fillWord2() {
+                document.getElementById("word2").textContent = word2;
+            }
+            function fillWord3() {
+                document.getElementById("word3").textContent = word3;
+            }
+            function fillWord4() {
+                document.getElementById("word4").textContent = word4;
+            }
+        </script>
+</body>
+</html>
