@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- 
+    Title: LastName_Mod9_3.html
+    Author: Gisella Adair
+    Date: March 9, 2026
+    Description:  Module 10.3 Assignment: JavaScript Exercise, Part 2
+  -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gisella Adair">
+    <meta name="Description" content="Module 10.-Assignment: JavaScript Exercise, Part 2">
+    <link rel="stylesheet" href="Adair_Mod10_3.css">
+    <title>CSD 340 Development with HTML and CSS</title>
+</head>
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById("myImage");
+            var caption = document.getElementById("imageName");
+
+
+            if (image.src.match("Cartagena")) {
+                image.src = "Images/Medellin.jpg";
+                caption.innerHTML = "Medellin City";
+            } else {
+                image.src = "Images/Cartagena.png";
+                caption.innerHTML = "Cartagena City";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>WHAT CITY IN COLOMBIA SHOULD I VISIT NEXT?</h1>
+
+<div class="card">
+
+<h2>Click the image to see my Options</h2>
+
+<img id="myImage" src="Images/Cartagena.png" onclick="changeImage()" alt="Cartagena">
+<h3 id="imageName" class="caption">Cartagena City</h3>
+
+</div>
+<div class="footer"> CSD 340 Web Development with HTML and CSS </div> 
+
+</div>
+
+</body>
+</html>
