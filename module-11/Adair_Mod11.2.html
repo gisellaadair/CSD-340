@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- 
+    Title: Adair_Mod11_2.html
+    Author: Gisella Adair
+    Date: March 15, 2026
+    Description:  Module 11.2 Assignment: JavaScript Exercise, Part 3
+  -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gisella Adair">
+    <meta name="Description" content="Module 11.2 Assignment: JavaScript Exercise, Part 3">
+    <link rel="stylesheet" href="Adair_Mod11.2.css">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+
+<script>
+    let todoList = [];
+
+    function addItem() {
+        let input = document.getElementById("itemInput").value;
+        if (input === ""){
+            alert("Please enter an Item.");
+            return;
+        }
+
+        todoList.push(input);
+        alert(input + " was added to the List");
+        document.getElementById("itemInput").value = "";
+        displayList();
+    }
+    function deleteLast() {
+        if(todoList.length === 0){
+            alert("The list is empty");
+            return;
+        }
+        let removedItem = todoList.pop();
+        alert(removedItem + " was removed from the list.");
+        displayList();
+    }
+
+    function sortList(){
+        todoList.sort();
+        alert("The list has been sorted");
+        displayList();
+    }
+    function displayList() {
+        let display = "<h3>Things to do</h3>";
+
+        for(let i = 0; i < todoList.length; i++){
+            display += (i + 1)+ " . " + todoList[i]+ "<br>";
+        }
+        document.getElementById("display").innerHTML = display;
+    }
+</script>
+
+<body>
+
+<h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+<div id="container">
+    <p>Enter a task below, then click "Add" to save it. You can view, delete, or sort entries using the buttons.</p>
+
+    <input type="text" id="itemInput" placeholder="Enter a task">
+
+    <br>
+
+    <button class="addBtn" onclick="addItem()">Add</button>
+    <button class="deleteBtn" onclick="deleteLast()">Delete Last Entry</button>
+    <button class="sortBtn" onclick="sortList()">Sort</button>
+
+    <div id="display"></div>
+    
+</div>
+</body>
+</html>
+
